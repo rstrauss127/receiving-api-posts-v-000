@@ -6773,3 +6773,8 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for 68.174.146.0 at 2019-07-01 18:37:40 +0000
+Cannot render console from 68.174.146.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (8.3ms)
