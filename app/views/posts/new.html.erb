@@ -15,9 +15,15 @@
 <script type="text/javascript" charset="utf-8">
   $(function() {
     $('form').submit(function(event) {
-           //prevent form from submitting the default way
-      event.preventDefault();
-      alert("we r hackerz");
+      event.preventDefault();//prevent form from submitting the default way
+
+      var values = $(this).serialize();
+
+      var posting = $.post('/posts', values);
+
+      posting.done(function(data) {
+        
+      });
     });
   });
 </script>
